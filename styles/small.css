@@ -2,13 +2,14 @@
     --primary-green: #3A5635;
     --secondary-orange: #D57B0E;
     --bg-almond: #F4E2D0;
+    --dark-color: #333;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     background-color: var(--bg-almond);
-    color: #000;
+    color: var(--dark-color);
 }
 
 /* Header & Logo */
@@ -34,15 +35,15 @@ header {
 }
 
 /* Navigation */
-nav { display: none; background-color: #333; }
+nav { display: none; background-color: var(--dark-color); color: var(--bg-almond); }
 nav.open { display: block; }
 
 .navigation { list-style: none; padding: 0; margin: 0; }
-.navigation li { border-bottom: 1px solid #444; }
+.navigation li { border-bottom: 1px solid --dark-color; }
 .navigation li a {
     display: block;
     padding: 1rem;
-    color: white;
+    color: var(--bg-almond);
     text-decoration: none;
     font-weight: bold;
 }
@@ -65,8 +66,8 @@ h1 { text-align: left; margin: 1rem 0; }
 
 /* Section/Card Styling */
 section.card {
-    background-color: #ddd;
-    border: 1px solid #999;
+    background-color: var(--bg-almond);
+    border: 1px solid --dark-color;
     margin-bottom: 0;
     display: flex;
     flex-direction: column;
@@ -97,7 +98,7 @@ section h2 {
     height: auto;
     border-radius: 8px;
     box-shadow: 2px 4px 10px rgba(0,0,0,0.2);
-    border: 3px solid white;
+    border: 3px solid --bg-almond;
 }
 
 /* Filter Buttons */
@@ -105,12 +106,13 @@ section h2 {
     display: flex;
     justify-content: space-around;
     padding: 10px;
-    background: #bbb;
+    background: var(--bg-almond);
 }
 
 .filter-buttons button {
-    background-color: #aaa;
-    border: 1px solid #444;
+    background-color: var(--primary-green);
+    border: 1px solid var(--dark-color);
+    color: var(--bg-almond);
     border-radius: 5px;
     padding: 5px 15px;
     cursor: pointer;
@@ -126,15 +128,15 @@ section h2 {
 }
 
 .course-card {
-    background-color: #bbb;
-    border: 1px solid #888;
+    background-color: var(--bg-almond);
+    border: 1px solid var(--dark-color);
     text-align: center;
     padding: 8px;
 }
 
 .completed {
     background-color: var(--secondary-orange);
-    color: white;
+    color: var(--bg-almond);
     border-color: var(--secondary-orange);
 }
 
@@ -160,14 +162,14 @@ footer {
 .social img:hover { transform: scale(1.1); filter: none; }
 
 .footer-info {
-    background-color: #999; 
+    background-color: var(--primary-green); 
     padding: 1rem 0;
-    border-top: 1px solid #000;
+    border-top: 1px solid var(--dark-color);
 }
 
 .footer-info p {
     margin: 5px 0;
-    color: #000;
+    color: var(--bg-almond);
     font-size: 0.9rem;
 }
 
