@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Course Home Page - Sarafina Weyulu</title>
+    <meta name="description" content="Official course home page for Sarafina Weyulu, WDD 231.">
+    <meta name="author" content="Sarafina Weyulu">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <!-- Scripts -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="images/logo.svg" alt="Site Logo" width="50" height="50">
+            <span>Sarafina Weyulu</span>
+        </div>
+        <button id="menu" aria-label="Toggle Menu">☰</button>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="chamber/index.html">Chamber Project</a></li>
+            <li><a href="project/index.html">Final Project</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+        
+        <div class="grid-container">
+            <!-- About Me Section -->
+            <section class="card">
+                <h2>About Me</h2>
+                <div class="card-content">
+                    <p>I am <strong>Sarafina Weyulu</strong>, a teacher who is now learning to code. I am currently a student at <strong>BYU-Pathway Worldwide</strong> in the <strong>WDD 231</strong> course. I enjoy combining my experience in education with new technical skills to build helpful web projects.</p>
+                </div>
+            </section>
+
+            <!-- Student Photo Section -->
+            <section class="card">
+                <h2>Student Photo</h2>
+                <div class="card-content centered">
+                    <img src="images/student.webp" alt="Sarafina Weyulu" width="200" height="250" loading="lazy">
+                </div>
+            </section>
+
+            <!-- Course Work Section -->
+            <section class="card certificate">
+                <h2>Web Certificate Courses</h2>
+                <div class="filter-buttons">
+                    <button id="all">All</button>
+                    <button id="cse">CSE</button>
+                    <button id="wdd">WDD</button>
+                </div>
+                <div id="course-display">
+                    <!-- Dynamic courses will be injected here by course.js -->
+                </div>
+                <p id="total-credits"></p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+    <div class="social">
+        <a href="https://linkedin.com" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+        <a href="https://github.com" target="_blank"><img src="images/github.svg" alt="GitHub"></a>
+        <a href="https://x.com" target="_blank"><img src="images/x.svg" alt="X"></a>
+    </div>
+    
+    <div class="footer-info">
+        <p>&copy; <span id="currentyear"></span> • Sarafina Weyulu • Namibia</p>
+        <p id="lastModified"></p>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+/* Only apply these styles for desktop views */
+@media screen and (min-width: 600px) {
+    
+    /* Hide the hamburger menu button on desktop */
+    #menu {
+        display: none;
+    }
+
+    /* Force the navigation to show and lay out horizontally */
+    nav {
+        display: block !important; 
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    /* Main Grid Layout  */
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two equal columns for About and Photo */
+        gap: 20px;
+        align-items: stretch;           /* Forces cards in the same row to equal height */
+    }
+
+    /* Ensures the card content fills the available height */
+    .card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin-bottom: 0;
+    }
+
+    .card-content {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centers text/photo vertically */
+    }
+
+    /* Titles with the Green Background */
+    section h2 {
+        background-color: var(--primary-green);
+        color: var(--bg-almond);
+        text-align: center;
+        padding: 0.5rem;
+        margin: 0;
+    }
+
+    /* The 'Web Certificate Courses' section spans both columns */
+    .certificate {
+        grid-column: 1 / 3;
+    }
+
+    /* Layout for the 3 course filter buttons */
+    .filter-buttons {
+        display: flex;
+        justify-content: space-around;
+        margin: 1rem 0;
+    }
+
+    .filter-buttons button {
+        flex: 1;
+        margin: 0 10px;
+        background-color: var(--primary-green);
+        color: var(--bg-almond);
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    /* Layout for the Course Cards inside the certificate section */
+    #course-display {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        text-align: center;
+    }
+
+    /* Social Media Icons centering */
+    .social {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        padding: 1rem 0;
+    }
+
+    .social img {
+        width: 35px;
+        height: auto;
+    }
+}
