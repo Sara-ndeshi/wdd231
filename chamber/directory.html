@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Directory | Swakopmund Chamber of Commerce</title>
+    <meta name="description" content="Official business directory for the Swakopmund Chamber of Commerce. Connecting and supporting the Erongo business community.">
+    <meta name="author" content="Sarafina Weyulu">
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta property="og:title" content="Swakopmund Chamber Business Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Discover and connect with local businesses in Swakopmund through our official chamber directory.">
+    <meta property="og:image" content="https://Sara-ndeshi.github.io">
+    <meta property="og:url" content="https://Sara-ndeshi.github.io">
+    <meta property="og:site_name" content="Swakopmund Chamber of Commerce">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 700px)">
+</head>
+<body>
+    <header>
+    <div class="header-content">
+        <!-- Logo and Title Group -->
+        <div class="logo-title-group">
+            <img src="images/chamber-logo.webp" alt="Swakopmund Chamber Logo" class="logo" width="50" height="50">
+            <h1>Swakopmund Chamber <span>of Commerce</span></h1>
+        </div>
+
+        <!-- Navigation: We'll use CSS to hide/show this -->
+        <nav aria-label="Main Navigation">
+            <button id="hamburger-menu" aria-label="Open Menu">☰</button>
+            <ul id="primary-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <!-- Dark mode button inside nav for large screens -->
+                <li class="nav-dark-mode"><button class="dark-mode-btn">🌓</button></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile-only controls -->
+        <div class="mobile-controls">
+            <button class="dark-mode-btn">🌓</button>
+        </div>
+    </div>
+</header>
+
+
+    <main id="main-content">
+        <div class="directory-toolbar">
+            <h2>Our Members</h2>
+            <div class="toggle-container">
+                <button id="grid-toggle" aria-label="Display as grid">Grid View</button>
+                <button id="list-toggle" aria-label="Display as list">List View</button>
+            </div>
+        </div>
+        <article id="directory-listing" class="grid"></article>
+    </main>
+
+    <footer>
+        <div class="footer-contact">
+            <p><strong>Swakopmund Chamber of Commerce</strong></p>
+            <p>Sam Nujoma Avenue, Swakopmund, Namibia</p>
+            <p>info@swakopchamber.com.na | +264 64 400 000</p>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/swkmun" target="_blank" aria-label="Visit our Facebook page">
+                <img src="images/fb-icon.svg" alt="Facebook" width="44" height="44">
+            </a>
+            <a href="https://www.linkedin.com/company/municipality-of-swakopmund/" target="_blank" aria-label="Visit our LinkedIn page">
+                <img src="images/li-icon.svg" alt="LinkedIn" width="44" height="44">
+            </a>
+        </div>
+        <div class="footer-meta">
+            <p>WDD 231 Class Project | Sarafina Weyulu</p>
+            <p>&copy; <span id="copyright-year"></span> Swakopmund Chamber</p>
+            <p>Last Modification: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/directory.js"></script>
+</body>
+</html>

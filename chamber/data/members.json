@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Namibia Desert Explorers",
+    "address": "Nathaniel Maxuilili St",
+    "phone": "+264 64 400 111",
+    "website": "https://namibiadesertexplorers.com",
+    "image": "images/member1.webp",
+    "membership": 3,
+    "tagline": "DO IT. OR REGRET IT."
+  },
+  { "name": "Desert Sands Hotel", "address": "45 Strand St", "phone": "+264 64 400 222", "website": "https://desertsands.com", "image": "images/member2.webp", "membership": 2, "tagline": "Luxury in the Namib" },
+  { "name": "The Jetty Restaurant", "address": "The Mole", "phone": "+264 64 400 333", "website": "https://thejetty.com", "image": "images/member3.webp", "membership": 1, "tagline": "Fresh Seafood Daily" },
+  { "name": "Namib Sky Balloons", "address": "Swakopmund Airport", "phone": "+264 64 400 444", "website": "https://namibsky.com", "image": "images/member4.webp", "membership": 3, "tagline": "High Above the Desert" },
+  { "name": "Atlantic Coffee", "address": "Woermann St", "phone": "+264 64 400 555", "website": "https://atlantic-coffee.com", "image": "images/member5.webp", "membership": 2, "tagline": "Best Brew in Town" },
+  { "name": "The Made in Namibia Collection", "address": "Shop 15, W&B Ankerplatz", "phone": "+264 81 128 2744", "website": "https://www.facebook.com/MadeinNamibiaCollection/", "image": "images/member6.webp", "membership": 1, "tagline": "Authentic Souvenirs" },
+  { "name": "Manica Group Namibia", "address": "2 Third Street, Walvis Bay", "phone": "+264 64 201 2911", "website": "https://www.manica.com.na/", "image": "images/member7.webp", "membership": 3, "tagline": "Moving the Erongo Region" }
+]
