@@ -14,7 +14,7 @@ body {
 
 /* --- Header: Mobile Layout --- */
 .header-content {
-    display: flex;              /* CHANGE from grid → flex */
+    display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--primary-color);
@@ -24,15 +24,15 @@ body {
 
 .logo-title-group {
     display: flex;
-    align-items: flex-start; /* KEY FIX */
+    align-items: flex-start;
     gap: 10px;
-    flex: 0 1 auto; /* allows it to shrink */
+    flex: 0 1 auto;
 }
 
 .logo {
     width: 50px;
     height: auto;
-    margin-top: 2px; /* tiny tweak for visual alignment */
+    margin-top: 2px;
 }
 
 header h1 { 
@@ -43,15 +43,15 @@ header h1 {
 
 header h1 span { 
     font-weight: bold; 
-    display: block; /* Forces "of Commerce" to next line as per wireframe */
+    display: block;
 }
 
-/* Container for Dark Mode and Hamburger */
+/* Mobile controls */
 .mobile-controls {
     display: flex;
     align-items: center;
     gap: 4px;
-    flex: 0 0 auto; /* prevents stretching */
+    flex: 0 0 auto;
 }
 
 .mobile-controls button {
@@ -59,13 +59,14 @@ header h1 span {
     padding: 0;
 }
 
-/* Hide the desktop dark mode button on small screens */
+/* Hide desktop dark mode button on small screens */
 .nav-dark-mode {
     display: none;
 }
 
-/* Touch Targets: 44px x 44px (Course Requirement) */
-#hamburger-menu, .dark-mode-btn {
+/* Buttons */
+#hamburger-menu,
+.dark-mode-btn {
     width: 44px;
     height: 44px;
     background: none;
@@ -78,15 +79,15 @@ header h1 span {
     justify-content: center;
 }
 
+/* Navigation */
 #primary-nav {
-    display: none; /* Hidden by default on mobile */
+    display: none;
     list-style: none;
     padding: 0;
     margin: 0;
     background: #34495e;
 }
 
-/* Class added by JavaScript to show the menu */
 #primary-nav.open {
     display: block;
 }
@@ -105,16 +106,45 @@ header h1 span {
     font-weight: bold;
 }
 
-/* --- Directory Grid/List Views --- */
-#directory-listing.grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; padding: 1.5rem; }
-#directory-listing.grid section { background: white; border: 1px solid #ddd; padding: 1rem; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-#directory-listing.grid img { width: 150px; height: auto; margin-bottom: 10px; }
+/* Directory */
+#directory-listing.grid { 
+    display: grid; 
+    grid-template-columns: 1fr; 
+    gap: 1.5rem; 
+    padding: 1.5rem; 
+}
 
-#directory-listing.list { display: flex; flex-direction: column; padding: 1rem; }
-#directory-listing.list section { display: block; padding: 10px; border-bottom: 1px solid #ccc; }
-#directory-listing.list img { display: none; } 
+#directory-listing.grid section { 
+    background: white; 
+    border: 1px solid #ddd; 
+    padding: 1rem; 
+    text-align: center; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
 
-/* --- Footer: Wireframe Alignment (Left Text, Centered Icons) --- */
+#directory-listing.grid img { 
+    width: 150px; 
+    height: auto; 
+    margin-bottom: 10px; 
+}
+
+#directory-listing.list { 
+    display: flex; 
+    flex-direction: column; 
+    padding: 1rem; 
+}
+
+#directory-listing.list section { 
+    display: block; 
+    padding: 10px; 
+    border-bottom: 1px solid #ccc; 
+}
+
+#directory-listing.list img { 
+    display: none; 
+}
+
+/* Footer */
 footer { 
     background: #eee; 
     padding: 2rem 1.5rem; 
@@ -136,7 +166,10 @@ footer {
     gap: 15px;
 }
 
-.footer-social img { width: 44px; height: 44px; }
+.footer-social img { 
+    width: 44px; 
+    height: 44px; 
+}
 
 .footer-meta {
     text-align: left; 
