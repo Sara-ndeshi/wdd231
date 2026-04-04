@@ -180,8 +180,6 @@ footer {
 }
 
 /* Hero & CTA */
-.hero { position: relative; width: 100%; }
-.hero img { width: 100%; height: auto; object-fit: cover; }
 .hero-cta {
     position: absolute; top: 15%; right: 5%;
     background: var(--accent-color); color: white;
