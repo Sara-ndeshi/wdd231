@@ -363,3 +363,84 @@ footer {
 .discover-card button:hover {
     background-color: var(--accent-color); /* Orange pops on hover */
 }
+
+/* join.html Specific Styling */
+#join-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "form"
+        "cards";
+    gap: 40px;
+    padding: 20px;
+}
+
+#form-container { grid-area: form; }
+#membership-cards { grid-area: cards; display: grid; gap: 15px; }
+
+/* Form Styling */
+form label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: block;
+}
+
+.submit-btn {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+/* Initial Load Animation */
+.anim-fade {
+    animation: fadeIn 1.5s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* Specific styling for the membership container */
+.membership-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Membership Cards */
+.membership-card {
+    background-color: #ccc; /* Light grey base */
+    border: 1px solid #999;
+    padding: 20px;
+    text-align: center;
+    /* This creates the rounded left side  */
+    border-radius: 25px 5px 5px 25px; 
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.membership-card h3 {
+    margin: 0 0 10px 0;
+    color: var(--text-color);
+}
+
+/* The "Learn More" button inside the card */
+.membership-card button {
+    background: white;
+    border: 1px solid #777;
+    padding: 5px 15px;
+    cursor: pointer;
+}

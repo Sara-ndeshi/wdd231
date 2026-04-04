@@ -185,4 +185,9 @@
         filter: brightness(80%);
         transform: scale(1.02);
     }
+
+    #join-layout {
+        grid-template-columns: 1fr 350px;
+        grid-template-areas: "form cards";
+    }
 }
