@@ -4,32 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Swakopmund Chamber of Commerce</title>
+    <meta name="description" content="Welcome to the Swakopmund Chamber of Commerce. Empowering businesses in the Erongo region.">
+    <meta name="author" content="Sarafina Weyulu">
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta property="og:title" content="Swakopmund Chamber of Commerce Home">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Official home page for Swakopmund's business community. Connect, grow, and thrive with us.">
+    <meta property="og:image" content="https://Sara-ndeshi.github.io/wdd231/chamber/images/chamber-logo.webp">
+    <meta property="og:url" content="https://github.io">
+    <meta property="og:site_name" content="Swakopmund Chamber of Commerce">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css" media="(min-width: 700px)">
+
+    <!-- JavaScript (Type Module for Week 3) -->
+    <script src="scripts/home.mjs" type="module"></script>
 </head>
 <body>
     <header>
         <div class="header-content">
-            <h1>Swakopmund Chamber <br><span>of Commerce</span></h1>
-            <button id="hamburger-menu" aria-label="Toggle menu">☰</button>
+            <div class="logo-title-group">
+                <img src="images/chamber-logo.webp" alt="Swakopmund Chamber Logo" class="logo" width="50" height="50">
+                <h1>Swakopmund Chamber <span>of Commerce</span></h1>
+            </div>
+
+            <nav aria-label="Main Navigation">
+                <button id="hamburger-menu" aria-label="Open Menu">☰</button>
+                <ul id="primary-nav">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li class="nav-dark-mode"><button class="dark-mode-btn">🌓</button></li>
+                </ul>
+            </nav>
+
+            <div class="mobile-controls">
+                <button class="dark-mode-btn">🌓</button>
+            </div>
         </div>
-        <nav>
-            <ul id="primary-nav">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
-            </ul>
-        </nav>
     </header>
-    <main>
-        <h2>Welcome to Swakopmund</h2>
-        <p>This is the landing page. Content will be added next week.</p>
+
+    <main id="home-content">
+        <!-- Hero Section with Call to Action -->
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 700px)">
+                <img src="images/hero-small.webp" alt="Swakopmund Beach Front" width="1000" height="400">
+            </picture>
+            <div class="hero-label">
+                <h2>Building Swakopmund Together</h2>
+                <a href="join.html" class="cta-btn">Join the Chamber</a>
+            </div>
+        </section>
+
+        <div class="home-grid">
+            <!-- Events Section -->
+            <section class="card">
+                <h3>Events</h3>
+                <div class="card-content">
+                    <p><strong>Coastal Expo</strong> - June 10-12</p>
+                    <p><strong>Business Breakfast</strong> - July 5</p>
+                </div>
+            </section>
+            
+            <!-- Weather Section (Filled by JS) -->
+            <section class="card weather">
+                <h3>Current Weather</h3>
+                <div id="weather-info" class="card-content">
+                    <!-- Current weather data here -->
+                </div> 
+            </section>
+
+            <section class="card weather">
+                <h4>Weather Forecast</h4>
+                <div id="forecast" class="card-content">
+                    <!-- Forecast data here -->
+                </div>
+            </section>
+                
+            <!-- Spotlight Section (Filled by JS) -->
+            <section id="spotlights">
+                <h3>Member Spotlights</h3>
+                <div id="business-spotlights">
+                    <!-- 2-3 Dynamic Gold/Silver members here -->
+                </div>
+            </section>
+        </div>
     </main>
+
     <footer>
-        <p>WDD 231 Project | [Your Name] | &copy; <span id="copyright-year"></span></p>
+        <div class="footer-contact">
+            <p><strong>Swakopmund Chamber of Commerce</strong></p>
+            <p>Sam Nujoma Avenue, Swakopmund, Namibia</p>
+            <p>info@swakopchamber.com.na | +264 64 400 000</p>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/swkmun" target="_blank" aria-label="Visit our Facebook page">
+                <img src="images/fb-icon.svg" alt="Facebook" width="44" height="44">
+            </a>
+            <a href="https://www.linkedin.com/company/municipality-of-swakopmund/" target="_blank" aria-label="Visit our LinkedIn page">
+                <img src="images/li-icon.svg" alt="LinkedIn" width="44" height="44">
+            </a>
+        </div>
+        <div class="footer-meta">
+            <p>WDD 231 Class Project | Sarafina Weyulu</p>
+            <p>&copy; <span id="copyright-year"></span> Swakopmund Chamber</p>
+            <p>Last Modification: <span id="last-modified"></span></p>
+        </div>
     </footer>
-    <script src="scripts/directory.js"></script>
 </body>
 </html>

@@ -4,13 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover | Swakopmund Chamber of Commerce</title>
-    <meta name="description" content="Explore the Swakopmund business environment and local attractions.">
+    <meta name="description" content="Explore Swakopmund's attractions, demographics, and business environment.">
     <meta name="author" content="Sarafina Weyulu">
     <link rel="icon" href="images/favicon.png">
 
+    <meta property="og:title" content="Discover Swakopmund | Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Explore the attractions and regional features of Swakopmund, Namibia.">
+    <meta property="og:image" content="https://Sara-ndeshi.github.io/wdd231/chamber/images/chamber-logo.webp">
+    <meta property="og:url" content="https://Sara-ndeshi.github.io/wdd231/chamber/discover.html">
+    <meta property="og:site_name" content="Swakopmund Chamber of Commerce">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css" media="(min-width: 700px)">
+
+    <script src="scripts/discover.js" type="module"></script>
 </head>
 <body>
     <header>
@@ -34,11 +47,31 @@
         </nav>
     </header>
 
-    <main id="main-content">
-        <section class="placeholder-section">
-            <h2>Discover Swakopmund</h2>
-            <p>An interactive photo gallery and regional visitor information will be added here soon.</p>
+    <main id="discover-layout">
+        
+        <aside id="visitor-message" class="message-banner"></aside>
+
+        <section id="sidebar">
+            <div class="card">
+                <h3>Swakopmund at a Glance</h3>
+                <div class="card-content">
+                    <p><strong>Region:</strong> Erongo</p>
+                    <p><strong>Founded:</strong> 1892</p>
+                    <p><strong>Population:</strong> ~44,700</p>
+                    <p><strong>Economy:</strong> Tourism, Fishing, Mining</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Regional Features</h3>
+                <div class="card-content">
+                    <p>Known for its German colonial architecture and the meeting of the Namib Desert with the Atlantic Ocean.</p>
+                </div>
+            </div>
         </section>
+
+        <section id="discover-grid">
+            </section>
+
     </main>
 
     <footer>
@@ -47,14 +80,19 @@
             <p>Sam Nujoma Avenue, Swakopmund, Namibia</p>
             <p>info@swakopchamber.com.na | +264 64 400 000</p>
         </div>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/swkmun" target="_blank" aria-label="Visit our Facebook page">
+                <img src="images/fb-icon.svg" alt="Facebook" width="44" height="44">
+            </a>
+            <a href="https://www.linkedin.com/company/municipality-of-swakopmund/" target="_blank" aria-label="Visit our LinkedIn page">
+                <img src="images/li-icon.svg" alt="LinkedIn" width="44" height="44">
+            </a>
+        </div>
         <div class="footer-meta">
             <p>WDD 231 Class Project | Sarafina Weyulu</p>
             <p>&copy; <span id="copyright-year"></span> Swakopmund Chamber</p>
             <p>Last Modification: <span id="last-modified"></span></p>
         </div>
     </footer>
-
-    <script src="scripts/directory.js"></script>
 </body>
 </html>
-
