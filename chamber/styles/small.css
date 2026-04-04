@@ -8,8 +8,18 @@
 body { 
     font-family: 'Segoe UI', Roboto, sans-serif; 
     margin: 0; 
+    padding: 0;
     background: var(--bg-color); 
     color: var(--text-color); 
+}
+
+main {
+    /* This adds 1rem (about 16px) of space on the left and right */
+    padding: 0 1rem; 
+    
+    /* This keeps your content from stretching too wide on big screens */
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the content */
 }
 
 /* --- Header: Mobile Layout --- */
