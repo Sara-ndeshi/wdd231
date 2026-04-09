@@ -1,0 +1,122 @@
+/* --- CSS VARIABLES --- */
+:root {
+    --primary-rose: #9e7476;
+    --secondary-pink: #d3b5b3;
+    --deep-slate: #1b2c36;
+    --slate-grey: #849398;
+    --bg-white: #fcfcfc;
+}
+
+/* --- GENERAL STYLES --- */
+body {
+    background-color: var(--bg-white);
+    color: var(--deep-slate);
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--deep-slate);
+    color: var(--bg-white);
+    padding: 3rem 1rem;
+    text-align: center;
+    border-bottom: 8px solid var(--primary-rose);
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+section {
+    margin-bottom: 4rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--secondary-pink);
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary-rose);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+/* --- COLOR PALETTE VISUALS --- */
+.palette-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 1.5rem;
+}
+
+.swatch {
+    flex: 1;
+    min-width: 160px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    color: white; /* Default for dark backgrounds */
+}
+
+.hex {
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+/* Swatch Colors */
+#deep-slate { background-color: var(--deep-slate); }
+#muted-rose { background-color: var(--primary-rose); }
+#dusty-pink { background-color: var(--secondary-pink); color: var(--deep-slate); }
+#slate-grey { background-color: var(--slate-grey); }
+
+/* --- TYPOGRAPHY EXAMPLE --- */
+.type-example {
+    font-size: 1.2rem;
+    padding: 1rem;
+    border: 1px dashed var(--slate-grey);
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+/* --- WIREFRAME STYLES --- */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.5rem 0;
+    border: 2px solid var(--secondary-pink);
+    border-radius: 4px;
+}
+
+.wireframe-group h3 {
+    margin-top: 2rem;
+    color: var(--slate-grey);
+    font-size: 1.2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: var(--slate-grey);
+    font-size: 0.9rem;
+}
