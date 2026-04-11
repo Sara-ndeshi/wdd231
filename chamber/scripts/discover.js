@@ -1,6 +1,6 @@
 import { attractions } from '../data/attractions.mjs';
 
-// 1. Visitor Message Logic (LocalStorage)
+// 1. Visitor Message Logic
 const visitField = document.querySelector("#visitor-message");
 const lastVisit = localStorage.getItem("lastVisit");
 const now = Date.now();
@@ -10,24 +10,20 @@ if (visitField) {
         visitField.textContent = "Welcome! Let us know if you have any questions.";
     } else {
         const daysSince = Math.floor((now - lastVisit) / 86400000);
-        if (daysSince < 1) {
-            visitField.textContent = "Back so soon! Awesome!";
-        } else {
-            visitField.textContent = `You last visited ${daysSince} ${daysSince === 1 ? 'day' : 'days'} ago.`;
-        }
+        visitField.textContent = daysSince < 1 ? "Back so soon! Awesome!" : `You last visited ${daysSince} ${daysSince === 1 ? 'day' : 'days'} ago.`;
     }
     localStorage.setItem("lastVisit", now);
 }
 
-// 2. Build the Attraction Cards 
+// 2. Build the Attraction Cards
 const grid = document.querySelector("#discover-grid");
 
 if (grid) {
-    attractions.forEach(item => {
+    attractions.forEach((item, index) => {
         const card = document.createElement("section");
         card.className = "discover-card";
+        card.style.gridArea = `card${index + 1}`; // For Criterion 11
         
-        // restructured to support the side-by-side CSS grid
         card.innerHTML = `
             <img src="${item.img}" alt="${item.name}" loading="lazy" width="150" height="150">
             <div class="card-details">
@@ -35,8 +31,13 @@ if (grid) {
                 <p>${item.desc}</p>
                 <address>${item.address}</address>
             </div>
-            <button onclick="window.open('${item.link}', '_blank')">Learn More</button>
+            <button class="learn-more-btn">Learn More</button>
         `;
+
+        card.querySelector(".learn-more-btn").addEventListener("click", () => {
+            window.open(item.link, '_blank');
+        });
+
         grid.appendChild(card);
     });
 }

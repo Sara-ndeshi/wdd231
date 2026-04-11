@@ -190,4 +190,52 @@
         grid-template-columns: 1fr 350px;
         grid-template-areas: "form cards";
     }
+
+    /* Main Layout with Named Grid Areas */
+    #discover-layout {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        grid-template-areas: 
+            "visit visit"
+            "sidebar main-grid";
+        gap: 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    #visitor-message { grid-area: visit; }
+    #sidebar { grid-area: sidebar; }
+    #discover-grid { grid-area: main-grid; }
+
+    /* Discover Cards Grid with Named Areas */
+    #discover-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        grid-template-areas: 
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+    }
+
+    /* Assign cards to areas */
+    .discover-card:nth-child(1) { grid-area: card1; }
+    .discover-card:nth-child(2) { grid-area: card2; }
+    .discover-card:nth-child(3) { grid-area: card3; }
+    .discover-card:nth-child(4) { grid-area: card4; }
+    .discover-card:nth-child(5) { grid-area: card5; }
+    .discover-card:nth-child(6) { grid-area: card6; }
+    .discover-card:nth-child(7) { grid-area: card7; }
+    .discover-card:nth-child(8) { grid-area: card8; }
+
+    /* Desktop Hover Effect */
+    .discover-card img {
+        transition: transform 0.4s ease, filter 0.3s ease;
+    }
+    .discover-card:hover img {
+        transform: scale(1.05);
+        filter: brightness(1.1);
+    }
 }
+
