@@ -447,6 +447,13 @@ form input, form textarea, form select {
     color: var(--text-color);
 }
 
+/* Only targets h2 tags that are inside a sidebar card */
+#sidebar .card h2 {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 7px;
+}
+
 /* The "Learn More" button inside the card */
 .membership-card button {
     background: white;
