@@ -55,3 +55,15 @@ header { padding: 1.5rem 5%; }
 .form-container {
     padding: 4rem 0;
 }
+
+@media (min-width: 600px) {
+    .footer-container {
+        flex-direction: row; /* Side-by-side */
+        justify-content: space-between; /* Pushes icons left, links right */
+        text-align: right;
+    }
+    
+    .social-icons {
+        gap: 20px;
+    }
+}
