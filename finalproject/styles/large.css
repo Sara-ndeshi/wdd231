@@ -1,0 +1,57 @@
+/* Desktop Enhancements (600px and up) */
+
+/* Layout & Nav */
+header { padding: 1.5rem 5%; }
+
+#menu-button { display: none; } /* Hide hamburger on desktop */
+
+#nav-menu { 
+    display: flex !important; /* Force visible */
+    position: static; 
+    flex-direction: row !important; 
+    gap: 2rem; 
+    box-shadow: none;
+    width: auto;
+    padding: 0;
+}
+
+/* Hero Section (Side-by-side as per wireframe) */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: left;
+    gap: 3rem;
+    padding: 4rem 5%;
+}
+
+/* Weather Toolbar (Full width strip) */
+.weather-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 10%;
+}
+
+/* Grid Layout (3 Columns for Featured Collection) */
+#directory-grid {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3rem 5%;
+}
+
+#featured h2, .directory-header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+
+/* Hover Effects for Cards */
+.item-card:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    border-color: var(--accent-mauve);
+}
+
+/* Form refinement */
+.form-container {
+    padding: 4rem 0;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | The Capsule Curator</title>
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+    <link rel="icon" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 600px)">
+    <script src="scripts/main.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="The Capsule Curator Logo" height="40">
+                <span class="brand-name">THE CAPSULE CURATOR</span>
+            </a>
+        </div>
+        <button id="menu-button" aria-label="Toggle Menu">☰</button>
+        <nav id="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Collection</a>
+            <a href="consultation.html">Join</a>
+        </nav>
+    </header>
+
+    <main class="thanks-container">
+        <section style="text-align: center; padding: 4rem 1rem;">
+            <h1>Thank You!</h1>
+            <p>Your style preferences have been recorded.</p>
+            <div id="results" style="margin: 2rem auto; padding: 2rem; border: 1px solid var(--accent-light); max-width: 400px;">
+                </div>
+            <a href="index.html" class="open-btn" style="text-decoration: none; display: inline-block;">Return Home</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | The Capsule Curator</p>
+    </footer>
+
+    <script>
+        const resultsElement = document.querySelector('#results');
+        const urlParams = new URLSearchParams(window.location.search);
+        
+        const name = urlParams.get('fname') || 'Guest';
+        const style = urlParams.get('style-pref') || 'Not selected';
+
+        resultsElement.innerHTML = `
+            <p><strong>Name:</strong> ${name}</p>
+            <p><strong>Aesthetic:</strong> ${style.charAt(0).toUpperCase() + style.slice(1)}</p>
+        `;
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Consultation | The Capsule Curator</title>
+    <meta name="description" content="Get a personalized minimalist style consultation and join our community.">
+    <meta name="author" content="Sarafina Weyulu">
+    
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+    <link rel="icon" href="images/favicon-32x32.png">
+    
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 600px)">
+    
+    <script src="scripts/main.js" type="module"></script>
+    <script src="scripts/form.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="The Capsule Curator Logo" height="40">
+                <span class="brand-name">THE CAPSULE CURATOR</span>
+            </a>
+        </div>
+        <button id="menu-button" aria-label="Toggle Menu">☰</button>
+        <nav id="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Collection</a>
+            <a href="consultation.html" class="active">Join</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h1>Virtual Closet Consultation</h1>
+            <p id="welcome-message">Tell us about your style preferences.</p>
+            
+            <form id="style-form" method="get" action="thanks.html">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" required placeholder="Enter your name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="email@example.com">
+
+                <label for="style-pref">Preferred Aesthetic:</label>
+                <select id="style-pref" name="style-pref">
+                    <option value="" disabled selected>Select an aesthetic</option>
+                    <option value="minimalist">Minimalist</option>
+                    <option value="professional">Professional</option>
+                    <option value="casual">Streetwear/Casual</option>
+                </select>
+
+                <label for="comments">What is your biggest style challenge?</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="e.g., Finding sustainable fabrics..."></textarea>
+
+                <input type="submit" value="Get My Guide" class="submit-btn">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | The Capsule Curator | <a href="attributions.html">Attributions</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | The Capsule Curator</title>
+    <meta name="description" content="Build a sustainable, minimalist wardrobe with our curated style guides and weather-based outfit suggestions.">
+    <meta name="author" content="Sarafina Weyulu">
+    
+    <meta property="og:title" content="The Capsule Curator">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/hero-social.webp">
+    <meta property="og:url" content="https://sarafinaw.github.io/wdd231/final/index.html">
+    
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+    <link rel="icon" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 600px)">
+    <script src="scripts/main.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="The Capsule Curator Logo" height="40">
+                <span class="brand-name">THE CAPSULE CURATOR</span>
+            </a>
+        </div>
+        <button id="menu-button" aria-label="Toggle Menu">☰</button>
+        <nav id="nav-menu">
+            <a href="index.html" class="active">Home</a>
+            <a href="directory.html">Collection</a>
+            <a href="consultation.html">Join</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Welcome to Your Curated Closet</h1>
+                <p>Quality over quantity. Discover the 15 essentials every wardrobe needs.</p>
+            </div>
+            <picture class="hero-image">
+                <img src="images/hero-home1.webp" alt="Minimalist aesthetic wardrobe" loading="lazy">
+            </picture>
+        </section>
+
+        <section id="weather-suggestion" class="weather-box">
+            <h2>Today's Styling Advice</h2>
+            <div id="weather-content">
+                <p>Loading local weather...</p>
+            </div>
+        </section>
+
+        <section id="featured">
+            <h2>Featured Essentials</h2>
+            <div id="directory-grid">
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | The Capsule Curator | <a href="attributions.html">Attributions</a></p>
+        <p><a href="#">Project Demonstration Video</a></p>
+    </footer>
+</body>
+</html>

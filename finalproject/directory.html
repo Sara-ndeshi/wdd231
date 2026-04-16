@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Collection | The Capsule Curator</title>
+    <meta name="description" content="Explore our directory of 15 essential items for a minimalist, sustainable wardrobe.">
+    <meta name="author" content="Sarafina Weyulu">
+    
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+    <link rel="icon" href="images/favicon-32x32.png">
+    
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 600px)">
+    
+    <script src="scripts/main.js" type="module"></script>
+    <script src="scripts/directory.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="The Capsule Curator Logo" height="40">
+                <span class="brand-name">THE CAPSULE CURATOR</span>
+            </a>
+        </div>
+        <button id="menu-button" aria-label="Toggle Menu">☰</button>
+        <nav id="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="directory.html" class="active">Collection</a>
+            <a href="consultation.html">Join</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="directory-header">
+            <h1>The Essential 15</h1>
+            <p>Filter by category to find exactly what you need to build your sustainable closet.</p>
+            
+            <div class="filters">
+                <button id="filter-all" class="filter-btn">All Items</button>
+                <button id="filter-tops" class="filter-btn">Tops</button>
+                <button id="filter-bottoms" class="filter-btn">Bottoms</button>
+            </div>
+        </section>
+
+        <div id="directory-grid">
+            </div>
+
+        <dialog id="item-modal">
+            <div id="modal-content">
+                </div>
+            <button id="close-modal">Close</button>
+        </dialog>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | The Capsule Curator | <a href="attributions.html">Attributions</a></p>
+    </footer>
+</body>
+</html>

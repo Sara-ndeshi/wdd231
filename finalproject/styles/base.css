@@ -1,0 +1,152 @@
+/* --- Variables & Reset --- */
+:root {
+    --primary-dark: #1B2C36;
+    --accent-mauve: #9E7476;
+    --accent-light: #D3B5B3;
+    --detail-gray: #849398;
+    --white: #ffffff;
+    --bg-light: #f9f9f9;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body { 
+    font-family: 'Montserrat', sans-serif; 
+    line-height: 1.6; 
+    color: var(--primary-dark);
+    background-color: var(--white);
+}
+
+h1, h2, h3 { font-family: 'Playfair Display', serif; margin-bottom: 1rem; }
+
+main { padding: 0 5%; }
+header, footer { padding: 1rem 5%; }
+section { padding: 2rem 0; }
+
+/* --- Header & Nav --- */
+header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 1.5rem 5%; 
+    border-bottom: 1px solid var(--accent-light);
+    position: relative; /* Necessary for absolute mobile menu */
+}
+
+.logo-container a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--primary-dark);
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+#menu-button {
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--primary-dark);
+    cursor: pointer;
+    z-index: 20;
+}
+
+#nav-menu { 
+    display: none; 
+}
+
+/* The Toggle Class */
+#nav-menu.open { 
+    display: flex; 
+    flex-direction: column; 
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 100%;
+    background: var(--white);
+    padding: 2rem;
+    box-shadow: 0 8px 10px rgba(0,0,0,0.1);
+    z-index: 10;
+    text-align: center;
+}
+
+#nav-menu a { 
+    text-decoration: none; 
+    color: var(--primary-dark); 
+    padding: 1rem 0; 
+    border-bottom: 1px solid var(--bg-light);
+}
+
+#nav-menu a.active { color: var(--accent-mauve); font-weight: bold; }
+
+/* --- Home Page Sections --- */
+.hero { padding: 3rem 0; text-align: center; background: var(--bg-light); }
+.hero h1 { font-size: 2.2rem; }
+.hero img { max-width: 100%; height: auto; margin-top: 1rem; }
+
+.weather-box {
+    background-color: var(--primary-dark);
+    color: var(--white);
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+    border-radius: 8px;
+}
+
+.weather-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.weather-icon { width: 60px; height: 60px; }
+
+/* --- Directory Grid --- */
+#directory-grid {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 2rem;
+}
+
+.item-card {
+    border: 1px solid var(--accent-light);
+    padding: 1.5rem;
+    text-align: center;
+    background: var(--white);
+}
+
+.item-card img { width: 100%; height: auto; margin-bottom: 1rem; }
+
+.open-btn {
+    background: var(--primary-dark);
+    color: var(--white);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* --- Consultation Form --- */
+.form-container { padding: 2rem 0; max-width: 600px; margin: auto; }
+form label { display: block; margin-top: 1.2rem; font-weight: bold; }
+form input, form select, form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border: 1px solid var(--detail-gray);
+}
+form input[type="submit"] {
+    background: var(--accent-mauve);
+    color: white;
+    border: none;
+    margin-top: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* --- Footer --- */
+footer { text-align: center; padding: 2.5rem; border-top: 1px solid var(--accent-light); font-size: 0.9rem; }
+footer a { color: var(--primary-dark); }

@@ -1,0 +1,17 @@
+[
+  { "id": 1, "name": "Organic Cotton Tee", "category": "Tops", "material": "100% Organic Cotton", "care": "Machine wash cold", "image": "images/white-tee.webp", "description": "A breathable, versatile staple." },
+  { "id": 2, "name": "Minimalist Linen Dress", "category": "Dresses", "material": "Sustainable Linen", "care": "Hand wash", "image": "images/linen-dress.webp", "description": "Perfect for work or weekend." },
+  { "id": 3, "name": "Straight Leg Denim", "category": "Bottoms", "material": "Recycled Cotton", "care": "Wash inside out", "image": "images/jeans.webp", "description": "Classic fit that lasts years." },
+  { "id": 4, "name": "Oversized Cashmere Sweater", "category": "Tops", "material": "Grade A Cashmere", "care": "Dry clean only", "image": "images/sweater.webp", "description": "Ethically sourced warmth for layering." },
+  { "id": 5, "name": "Tailored Wool Blazer", "category": "Outerwear", "material": "RWS Certified Wool", "care": "Professional clean", "image": "images/blazer.webp", "description": "Elevates any casual outfit instantly." },
+  { "id": 6, "name": "Classic Trench Coat", "category": "Outerwear", "material": "Recycled Polyester Blend", "care": "Wipe clean", "image": "images/trench.webp", "description": "The ultimate rainy-day essential." },
+  { "id": 7, "name": "Silk Button-Down", "category": "Tops", "material": "Mulberry Silk", "care": "Hand wash cold", "image": "images/silk-shirt.webp", "description": "A sophisticated piece for professional settings." },
+  { "id": 8, "name": "Wide Leg Trousers", "category": "Bottoms", "material": "Tencel Lyocell", "care": "Machine wash delicate", "image": "images/trousers.webp", "description": "Flowy, comfortable, and sustainable." },
+  { "id": 9, "name": "Leather Chelsea Boots", "category": "Footwear", "material": "Vegetable Tanned Leather", "care": "Condition regularly", "image": "images/boots.webp", "description": "Durable boots for year-round wear." },
+  { "id": 10, "name": "White Canvas Sneakers", "category": "Footwear", "material": "Organic Cotton & Rubber", "care": "Spot clean", "image": "images/sneakers.webp", "description": "Casual comfort for everyday errands." },
+  { "id": 11, "name": "Knit Midi Skirt", "category": "Bottoms", "material": "Eco-Vero Viscose", "care": "Flat dry", "image": "images/skirt.webp", "description": "Stretchable elegance for any body type." },
+  { "id": 12, "name": "Structured Tote Bag", "category": "Accessories", "material": "Vegan Apple Leather", "care": "Wipe with damp cloth", "image": "images/tote.webp", "description": "Fits your laptop and daily essentials." },
+  { "id": 13, "name": "Gold Hoop Earrings", "category": "Accessories", "material": "Recycled 14k Gold", "care": "Polishing cloth", "image": "images/hoops.webp", "description": "A subtle touch of luxury." },
+  { "id": 14, "name": "Chunky Ribbed Beanie", "category": "Accessories", "material": "Merino Wool", "care": "Hand wash", "image": "images/beanie.webp", "description": "Essential for cold-weather styling." },
+  { "id": 15, "name": "Lightweight Cardigan", "category": "Tops", "material": "Hemp & Organic Cotton Blend", "care": "Machine wash cold", "image": "images/cardigan.webp", "description": "The perfect transitional layering piece." }
+]
